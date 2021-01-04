@@ -207,7 +207,7 @@ void AlgorithmBase::startGrab(QString strTrainRunNumber)
 		short* arrayData = NULL;
 		m_bIsOpen = true;
 
-		//新增
+		//新增，每次采集都重新连接采集仪
 		QByteArray byte_ip = m_strConnectIP.toLatin1();
 		int_ip = IP_StrToInt(byte_ip.data());
 		int ret = SysInit(&int_ip, 1);
