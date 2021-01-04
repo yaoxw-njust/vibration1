@@ -17,6 +17,8 @@ AlgorithmBase::AlgorithmBase(QObject *parent) : QObject(parent)
 	m_pMySqlHelper = ImportDllClass::GetInstance()->m_pMySqlHelper;
 }
 
+
+
 AlgorithmBase::~AlgorithmBase()
 {
 	if (NULL != ETHDLLHandel)
