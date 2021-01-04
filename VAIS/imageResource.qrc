@@ -1,0 +1,8 @@
+<RCC>
+    <qresource prefix="/">
+        <file>image/password.ico</file>
+        <file>image/VAIS.ico</file>
+        <file>image/yunda.png</file>
+        <file>image/simu.net.ico</file>
+    </qresource>
+</RCC>
