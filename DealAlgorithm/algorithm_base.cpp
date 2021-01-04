@@ -17,6 +17,7 @@ AlgorithmBase::AlgorithmBase(QObject *parent) : QObject(parent)
 	m_pMySqlHelper = ImportDllClass::GetInstance()->m_pMySqlHelper;
 }
 
+
 AlgorithmBase::~AlgorithmBase()
 {
 	if (NULL != ETHDLLHandel)
@@ -206,6 +207,7 @@ void AlgorithmBase::startGrab(QString strTrainRunNumber)
 		short* arrayData = NULL;
 		m_bIsOpen = true;
 
+		//ÐÂÔö
 		QByteArray byte_ip = m_strConnectIP.toLatin1();
 		int_ip = IP_StrToInt(byte_ip.data());
 		int ret = SysInit(&int_ip, 1);
